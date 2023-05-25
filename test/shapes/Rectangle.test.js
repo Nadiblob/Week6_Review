@@ -10,13 +10,12 @@ describe('Rectangle', () => {
         rect = new Rectangle('r1', 20, 40);
     });
 
-    test('is Rectangle and Shape', () => {
+    test('is a child class of Shape', () => {
         expect(rect instanceof Shape).toBeTruthy();
-        expect(rect instanceof Rectangle).toBeTruthy();
     });
 
     test('getArea()', () => {
-        expect( rect.getArea() ).toBe(800);
+        // FIX ME
     });
 
     test('toString()', () => {

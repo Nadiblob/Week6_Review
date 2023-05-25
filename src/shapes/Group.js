@@ -5,16 +5,12 @@ class Group {
     }
 
     addShape(shape) {
-        this.shapes.push(shape);
+        // FIX ME
     }
 
     getArea() {
-        let area = 0;
-        for (let shape of this.shapes) {
-            area += shape.getArea();
-        }
-
-        return area;
+        // Compute the sum of all the areas of the shapes in the group
+        // FIX ME
     }
 }
 

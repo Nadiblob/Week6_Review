@@ -1,9 +1,7 @@
 const Shape = require('./Shape');
 
-// The area of a circle is PI times the radius squared,
-// or in JS: PI * (this.radius ** 2)
-const PI = 3.14;
 
+const PI = 3.14;
 
 
 class Circle extends Shape {
@@ -13,7 +11,9 @@ class Circle extends Shape {
     }
 
     getArea() {
-        return PI * (this.radius ** 2);
+        // The area of a circle is PI times the radius squared,
+        // or in JavaScript: PI * (radius ** 2)
+        // FIX ME
     }
 
     toString() {

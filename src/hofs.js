@@ -26,10 +26,7 @@ const countries = [
  ***/
 
 function sumSomePops(count) {
-    let firstCount = countries.slice(0, count);
-    let sum = firstCount.reduce((acc, country) => acc + country.population, 0);
-
-    return sum;
+    return 0;  // FIX ME
 }
 
 
@@ -42,10 +39,7 @@ function sumSomePops(count) {
  ***/
 
 function bigCountries() {
-    let bigcs = countries.filter(c => c.population >= 100);
-    let strs = bigcs.map(c => `${c.name} has a population of ${c.population} million`);
-
-    return strs;
+    return [];  // FIX ME
 }
 
 
@@ -58,11 +52,7 @@ function bigCountries() {
  ***/
 
 function bigCountriesSorted() {
-    let bigcs = countries.filter(c => c.population >= 100);
-    bigcs.sort((a, b) => b.population - a.population);
-    let strs = bigcs.map(c => `${c.name} has a population of ${c.population} million`);
-
-    return strs;
+    return [];  // FIX ME
 }
 
 
