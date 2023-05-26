@@ -25,8 +25,16 @@ const countries = [
  * Return the sum of the populations of the first 'count' countries in the array above.
  ***/
 
+//Pseudocode: 
+/***
+ * -
+ */
+
 function sumSomePops(count) {
-    return 0;  // FIX ME
+    let firstCountries = countries.slice(0, count);
+    let totalPop = firstCountries.reduce((acc,c) => acc + c.population, 0);
+
+    return totalPop;
 }
 
 
