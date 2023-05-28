@@ -44,10 +44,17 @@ function sumSomePops(count) {
  * Find all countries with populations of at least 100 million.
  * Return an array of strings in this format:
  * "Brazil has a population of 216 million"
+ * 
+ * Pseudo code: 
+ * Access country object
+ * Filter all country objects that are >100 mil
+ * Map the big countries into strings
  ***/
-
 function bigCountries() {
-    return [];  // FIX ME
+let filterCountry = countries.filter(country => country.population > 100);
+let bigCountries = filterCountry.map(country => `${country.name} has a population of ${country.population} million`);
+
+return bigCountries;
 }
 
 
@@ -59,9 +66,12 @@ function bigCountries() {
  * Hint: Do a web search for: javascript sort
  ***/
 
-function bigCountriesSorted() {
-    return [];  // FIX ME
-}
+// function bigCountriesSorted() {
+// let filterCountry = countries.filter(country => country.population > 100);
+// let bigCountries = filterCountry.map(country => `${country.name} has a population of ${country.population} million`);
+
+//     return bigCountries.sort((a,b) => a.population-b.population);
+// }
 
 
 
