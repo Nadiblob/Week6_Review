@@ -1,17 +1,19 @@
 const Shape = require('./Shape');
 
 
-class Rectangle {
+class Rectangle extends Shape {
     constructor(id, width, height) {
         super(id, width, height);
     }
 
     getArea() {
-        // FIX ME
+        let area = this.width * this.height;
+
+        return area;
     }
 
     toString() {
-        // FIX ME
+        return `Rectangle id: ${this.id} w: ${this.width} h: ${this.height}`;
     }
 }
 
